@@ -4,7 +4,7 @@ import org.junit.Test
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-class DateOfWeekValidationTest {
+class DateOfWeekAndTimeValidationTest {
 
     @Test
     fun testRestrictionToCirculateDayOfWeek() {

@@ -11,7 +11,7 @@ fun validateLicencePlateNumber(licencePlateNumber: String) =
 
 fun validateDate(date: String) =
         try {
-            SimpleDateFormat("dd/MM/yyyy").apply {
+            SimpleDateFormat(ConstantsUtil.DATE_PATTERN).apply {
                 isLenient = false
                 parse(date)
             }
@@ -22,7 +22,7 @@ fun validateDate(date: String) =
 
 fun validateTime(time: String) =
         try {
-            LocalTime.parse(time, DateTimeFormatter.ofPattern("HH:mm"))
+            LocalTime.parse(time, DateTimeFormatter.ofPattern(ConstantsUtil.TIME_PATTERN))
             true
         } catch (exception: DateTimeException) {
             false
