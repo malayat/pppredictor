@@ -8,6 +8,10 @@ class ConstantsUtil {
         const val DATE_PATTERN = "dd/MM/yyyy"
         const val TIME_PATTERN = "HH:mm"
 
+        const val MSG_ERR_LICENCE_PLATE_NUMBER = "Invalid licence plate number"
+        const val MSG_DATE = "Invalid date"
+        const val MSG_TIME = "Invalid time"
+
         val DAY_OF_WEEK_CONFIGURATION: Map<DayOfWeek, Pair<Char, Char>> = mapOf(
                 DayOfWeek.MONDAY to Pair('1', '2'),
                 DayOfWeek.TUESDAY to Pair('3', '4'),
