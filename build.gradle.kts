@@ -18,3 +18,7 @@ dependencies {
 application {
     mainClassName = "ec.solmedia.pppredictor.AppKt"
 }
+
+val run by tasks.getting(JavaExec::class) {
+    standardInput = System.`in`
+}
